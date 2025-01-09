@@ -39,7 +39,7 @@
     </style>
 </head>
 
-<body>
+<body class="bg-light">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-black text-white">
         <!-- Calendar on the Left -->
@@ -47,10 +47,10 @@
         <!-- Title in the Center -->
         <div class="navbar-title text-center">Hayden's Planner</div>
         <!-- Clock on the Right -->
-        <div class="current-time p-4" id="currentTime"></div>
+        <div class="current-time p-4 d-none d-sm-block" id="currentTime"></div>
     </nav>
 
-    <div class="container my-5">
+    <div class="container my-4 bg-white rounded p-4">
         <h1 class="mb-2">Tasks</h1>
 
         <!-- Input Form -->
@@ -63,12 +63,11 @@
         <ul id="todoList" class="list-group">
             <!-- Tasks will be dynamically added here -->
         </ul>
-        <hr class="my-4">
     </div>
 
 
     <!-- Container -->
-    <div class="container my-5">
+    <div class="container my-4 bg-white rounded p-4">
         <h1 class="mb-2">Classes</h1>
 
         <!-- Stacked Flex Columns -->
@@ -136,25 +135,35 @@
             </div>
         </div>
 
-        <hr class="my-4">
-
-    </div>
-
-
-
-    <div class="container my-5">
-        <div class="container mt-4">
-            <h1>Crossfit</h1>
-            <img id="dailyCrossFitImage" class="img-fluid rounded" alt="Daily CrossFit Image">
+        <div class="p-3 text-black mb-2 d-flex align-items-center gap-3">
+            <strong>MGM 2032</strong>
+            <a href="https://example.com" class="btn btn-light" target="_blank" rel="noopener noreferrer">
+                Notes
+            </a>
+            <a href="https://example.com" class="btn btn-light" target="_blank" rel="noopener noreferrer">
+                Book
+            </a>
+            <a href="https://example.com" class="btn btn-light" target="_blank" rel="noopener noreferrer">
+                Syllabus
+            </a>
         </div>
-        <hr class="my-4">
     </div>
 
 
-    <div class="container mt-4">
+    </div>
+
+
+
+    <div class="container my-3 bg-white rounded p-4">
+        <h1>CrossFit</h1>
+        <img id="dailyCrossFitImage" class="img-fluid rounded" alt="Daily CrossFit Image">
+    </div>
+
+
+
+    <div class="container my-3 bg-white rounded p-4">
         <h1>Olympic</h1>
         <img id="dailyOlyImage" class="img-fluid rounded" alt="Daily Oly Image">
-        <hr class="my-4">
     </div>
 
     <!-- Bootstrap JS Bundle -->
@@ -286,7 +295,7 @@
     <script>
         // Array of crossfit images URLs
         const crossFitImages = [
-            "https://github.com/haydeHow/planner/blob/main/crossfit_img/1.png", 
+            "https://github.com/haydeHow/planner/blob/main/crossfit_img/1.png",
             "https://github.com/haydeHow/planner/blob/main/crossfit_img/1.png"
         ];
 
