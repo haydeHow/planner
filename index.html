@@ -37,43 +37,30 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         }
 
-        .quizlet-button {
-            background-color: #3ccfcf;
-            /* Teal-blue background */
-            color: #ffffff;
-            /* White text */
+        .button {
+            display: inline-block;
+            padding: 8px 15px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
             border: none;
-            border-radius: 8px;
-            /* Smoothly rounded corners */
-            padding: 12px 24px;
-            /* Comfortable padding */
-            font-size: 16px;
-            /* Readable font size */
-            font-weight: bold;
-            /* Emphasized text */
+            border-radius: 5px;
             cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            /* Subtle shadow */
-            transition: background-color 0.2s, transform 0.2s;
-            /* Smooth animations */
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
-        .quizlet-button:hover {
-            background-color: #2bb0b0;
-            /* Slightly darker teal-blue */
-            transform: translateY(-2px);
-            /* Lift effect */
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-            /* Enhanced shadow */
+        .quizlet-button {
+            background-color: rgb(66, 87, 178);
         }
 
-        .quizlet-button:active {
-            background-color: #289a9a;
-            /* Even darker teal-blue */
-            transform: translateY(0);
-            /* Reset lift effect */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            /* Reset shadow */
+        .canvas-button {
+            background-color: rgb(245, 102, 0);
+        }
+
+        .outlook-button {
+            background-color: rgb(36, 158, 228)
         }
     </style>
 </head>
@@ -93,10 +80,11 @@
         <h1 class="mb-4">Quick Links</h1>
         <hr>
         <div class="d-flex flex-row gap-3">
-            <a href="https://clemson.instructure.com/?login_success=1" class="btn btn-info text-white"
+            <a href="https://clemson.instructure.com/?login_success=1" class="canvas-button text-white button"
                 role="button">Canvas</a>
-            <a href="https://outlook.office.com/mail/" class="btn btn-info text-white" role="button">Email</a>
-            <a href="https://quizlet.com/user/hhowell52/sets" class="btn btn-info text-white" role="button">Quizlet</a>
+            <a href="https://outlook.office.com/mail/" class="outlook-button text-white button" role="button">Outlook</a>
+            <a href="https://quizlet.com/user/hhowell52/sets" class="quizlet-button text-white button"
+                role="button">Quizlet</a>
         </div>
     </div>
 
