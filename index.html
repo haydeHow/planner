@@ -36,6 +36,45 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         }
+
+        .quizlet-button {
+            background-color: #3ccfcf;
+            /* Teal-blue background */
+            color: #ffffff;
+            /* White text */
+            border: none;
+            border-radius: 8px;
+            /* Smoothly rounded corners */
+            padding: 12px 24px;
+            /* Comfortable padding */
+            font-size: 16px;
+            /* Readable font size */
+            font-weight: bold;
+            /* Emphasized text */
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+            transition: background-color 0.2s, transform 0.2s;
+            /* Smooth animations */
+        }
+
+        .quizlet-button:hover {
+            background-color: #2bb0b0;
+            /* Slightly darker teal-blue */
+            transform: translateY(-2px);
+            /* Lift effect */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            /* Enhanced shadow */
+        }
+
+        .quizlet-button:active {
+            background-color: #289a9a;
+            /* Even darker teal-blue */
+            transform: translateY(0);
+            /* Reset lift effect */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Reset shadow */
+        }
     </style>
 </head>
 
@@ -49,6 +88,16 @@
         <!-- Clock on the Right -->
         <div class="current-time p-4 d-none d-sm-block" id="currentTime"></div>
     </nav>
+
+    <div class="container my-4 bg-white rounded p-4">
+        <h1 class="mb-4">Quick Links</h1>
+        <div class="d-flex flex-row gap-3">
+            <button type="button" class="btn btn-info text-white" href="https://clemson.instructure.com/?login_success=1">Canvas</button>
+            <button type="button" class="btn btn-info text-white" href="https://outlook.office.com/mail/">Email</button>
+            <button type="button" class="btn btn-info text-white" href="https://quizlet.com/user/hhowell52/sets">Quizlet</button>
+        </div>
+    </div>
+
 
     <div class="container my-4 bg-white rounded p-4">
         <h1 class="mb-2">Tasks</h1>
@@ -81,7 +130,8 @@
 
             <div class="p-3 text-black mb-2 d-flex align-items-center gap-3">
                 <strong>Econ 2120</strong>
-                <a href="https://clemson.instructure.com/courses/244728" class="btn btn-light" target="_blank" rel="noopener noreferrer">
+                <a href="https://clemson.instructure.com/courses/244728" class="btn btn-light" target="_blank"
+                    rel="noopener noreferrer">
                     Home
                 </a>
                 <a href="https://github.com/haydeHow/classes/tree/main/econ-2120" class="btn btn-light" target="_blank"
@@ -167,14 +217,14 @@
 
     <div class="container my-3 bg-white rounded p-4">
         <h1>CrossFit</h1>
-        <img id="dailyCrossFitImage" class="img-fluid rounded" alt="Daily CrossFit Image">
+        <img src="./crossfit.png" class="img-fluid rounded" alt="Daily CrossFit Image">
     </div>
 
 
 
     <div class="container my-3 bg-white rounded p-4">
         <h1>Olympic</h1>
-        <img id="dailyOlyImage" class="img-fluid rounded" alt="Daily Oly Image">
+        <img class="img-fluid rounded" alt="Daily Oly Image" src="./oly.png">
     </div>
 
     <!-- Bootstrap JS Bundle -->
