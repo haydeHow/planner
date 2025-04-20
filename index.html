@@ -69,6 +69,41 @@
     </style>
 </head>
 
+
+    <!-- Button to trigger modal -->
+<div class="container mt-5 text-center">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#downloadModal">
+    Open Download Modal
+  </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="downloadModalLabel">Download File</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        Would you like to download the file?
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        
+        <!-- Download button -->
+        <a href="example.pdf" download class="btn btn-success">
+          Download
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
 <body class="bg-light">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-black text-white">
